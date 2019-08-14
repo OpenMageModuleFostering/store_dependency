@@ -1,0 +1,76 @@
+/**
+ * @category    Customweb
+ * @package     Customweb
+ * @copyright   Copyright (c) http://www.customweb.com
+ */
+.dependency-select {
+	position: relative;
+	width: 100%;
+}
+
+.dependency-select select {
+	position: absolute;
+	right: 0px;
+	margin-right: -210px;
+	top: 20px;
+}
+
+/**
+.dependency-select .config-dependency-selector {
+	position: absolute;
+	right: 0px;
+	margin-right: -290px;
+	top: 20px;
+}
+*/
+
+.dependency-select .config-dependency-selector.disabled {
+	display: none;
+	width: 200px;
+}
+
+.dependency-box {
+	float:right;
+	min-height: 35px;
+}
+
+.fieldset-wide .form-list td.value .dependency-select select.disabled {
+	display: none;
+	width: 200px;
+}
+
+.fieldset-wide .form-list td.value .dependency-select select {
+	width: 200px;
+	float: right;
+}
+.fieldset-wide .form-list td.value select {
+	float: left;
+}
+
+.entry-edit .form-list td.value .dependency-select select.disabled {
+	display: none;
+	width: 200px;
+}
+
+.entry-edit .form-list td.value .dependency-select select {
+	width: 200px;
+	float: right;
+}
+
+/* Do not show the dependency selector when within a label */
+.entry-edit td label .dependency-select select {
+	display: none;
+	width: 200px;
+}
+
+.entry-edit .form-list td.value select {
+	float: left;
+}
+
+.dependency-loop {
+	color : #999999;
+}
+
+.dependency-check-failed {
+	color : #999999;
+}

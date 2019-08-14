@@ -1,0 +1,11 @@
+<config>
+    <modules>
+        <Customweb_Dependency>
+            <active>true</active>
+            <codePool>local</codePool>
+            <depends>
+                <Mage_Adminhtml />
+            </depends>
+        </Customweb_Dependency>
+    </modules>
+</config>

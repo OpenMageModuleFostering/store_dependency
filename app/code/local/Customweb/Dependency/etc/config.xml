@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+	<modules>
+		<Customweb_Dependency>
+			<version>1.0.0</version>
+		</Customweb_Dependency>
+	</modules>
+
+	<global>
+		<models>
+			<dependency>
+				<class>Customweb_Dependency_Model</class>
+				<resourceModel>dependency_mysql4</resourceModel>
+			</dependency>
+			<dependency_mysql4>
+				<class>Customweb_Dependency_Model_Mysql4</class>
+				<entities>
+					<product>
+						<table>customweb_product_dependency</table>
+					</product>
+					<category>
+						<table>customweb_category_dependency</table>
+					</category>
+					<config>
+						<table>customweb_config_dependency</table>
+					</config>
+				</entities>
+			</dependency_mysql4>
+		</models>
+		<helpers>
+			<dependency>
+				<class>Customweb_Dependency_Helper</class>
+			</dependency>
+		</helpers>
+		<resources>
+			<dependency_write>
+				<connection>
+					<use>core_write</use>
+				</connection>
+			</dependency_write>
+			<dependency_read>
+				<connection>
+					<use>core_read</use>
+				</connection>
+			</dependency_read>
+			<dependency_setup>
+				<setup>
+					<module>Customweb_Dependency</module>
+					<class>Customweb_Dependency_Model_Resource_Setup</class>
+				</setup>
+			</dependency_setup>
+		</resources>
+		<events>
+			<core_model_config_save_after>
+				<observers>
+					<dependency_core_config_save_after>
+						<type>singleton</type>
+						<class>Customweb_Dependency_Model_ConfigObserver</class>
+						<method>coreConfigSaveAfter</method>
+					</dependency_core_config_save_after>
+				</observers>
+			</core_model_config_save_after>
+			<model_config_data_save_before>
+				<observers>
+					<dependency_config_save_before>
+						<type>singleton</type>
+						<class>Customweb_Dependency_Model_ConfigObserver</class>
+						<method>configSaveBefore</method>
+					</dependency_config_save_before>
+				</observers>
+			</model_config_data_save_before>
+			<core_config_data_save_after>
+				<observers>
+					<dependency_config_save_after>
+						<type>singleton</type>
+						<class>Customweb_Dependency_Model_ConfigObserver</class>
+						<method>configSaveAfter</method>
+					</dependency_config_save_after>
+				</observers>
+			</core_config_data_save_after>
+			<core_config_data_delete_after>
+				<observers>
+					<dependency_config_delete_after>
+						<type>singleton</type>
+						<class>Customweb_Dependency_Model_ConfigObserver</class>
+						<method>configDeleteAfter</method>
+					</dependency_config_delete_after>
+				</observers>
+			</core_config_data_delete_after>
+			
+			
+			
+		</events>
+	</global>
+
+	<adminhtml>
+		<layout>
+			<updates>
+				<dependency>
+					<file>dependency.xml</file>
+				</dependency>
+			</updates>
+		</layout>
+	</adminhtml>
+	
+	
+</config>

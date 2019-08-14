@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/store_dependency",
+    "type": "magento-module",
+    "license": "Customweb-Software-Licence",
+    "homepage": "",
+    "description": "The Extension allows you to synchronize and share content as well as settings among your different magento stores. ",
+    "authors": [
+    {
+        "name": "Severin Klingler",
+        "email": "info@customweb.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

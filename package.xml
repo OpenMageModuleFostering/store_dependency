@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package>
+    <name>store_dependency</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.customweb.com/en/software-license-agreement">Customweb Software Licence</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The Extension allows you to synchronize and share content as well as settings among your different magento stores. </summary>
+    <description>The extension allows you to sync content between different Magento stores. A typical use case for this would be, if you are having country specific shops with more or less the same content.&#xD;
+&lt;b&gt;Products:&lt;/b&gt;&#xD;
+&#xD;
+Choose for each attribute of your product where to synchronize it from. This allows you to manage your content only in your default or any other store. The extension will then, as soon as the article will be saved, automatically synchronize the content from the source you choose.&#xD;
+&#xD;
+&lt;b&gt;Settings:&lt;/b&gt;&#xD;
+&#xD;
+The extension enables you not only to synchronize content but also all the settings. Once you set-up your specific store the extensions enables you to choose where to synchronize the settings from.&#xD;
+&#xD;
+This is the free version which only contains the settings part. The full version costs 180 $ and is available in our store: http://www.customweb.com/shop/en/magento-store-configuration-sync.html</description>
+    <notes>Initial release.</notes>
+    <authors><author><name>Severin Klingler</name><user>customweb</user><email>info@customweb.com</email></author></authors>
+    <date>2013-04-16</date>
+    <time>14:57:48</time>
+    <contents><target name="magelocal"><dir name="Customweb"><dir name="Dependency"><dir name="Helper"><file name="Config.php" hash="03b8c899185401944e755949d9bd57f7"/><file name="Data.php" hash="887cd057dbbebb2969cfa66ee39be28c"/><file name="Element.php" hash="ce43a22f8edc7b6e215e7542c4c05b1b"/></dir><dir name="Model"><file name="Category.php" hash="7c5545d94dcb6034f2d669b8c550f8d6"/><file name="Config.php" hash="329eafba749e1e66b157261fbf97bc55"/><file name="ConfigObserver.php" hash="377ab826ad78ecb61070436de8d86269"/><dir name="Mysql4"><dir name="Category"><file name="Collection.php" hash="81a1f7780bd8ab3fa47ac1b94e3008c7"/></dir><file name="Category.php" hash="df7c1c607fd5c9eb37e23971c55c9126"/><dir name="Config"><file name="Collection.php" hash="b774dbf894a742b74dbc5d958b3957ff"/></dir><file name="Config.php" hash="8d07a47ac114f70193ff508fac945d92"/><dir name="Product"><file name="Collection.php" hash="df9a5335d65258b78134c44d8c6e5877"/></dir><file name="Product.php" hash="197bfa001b8186c251493a73f61e3895"/></dir><file name="Product.php" hash="4a6ccbae9eb7c9e04d820b43b717cb34"/><dir name="Resource"><file name="Setup.php" hash="f3b9ae7227f7385c6d4199c3ad65f0c3"/></dir></dir><dir name="controllers"><file name="TestController.php" hash="a09d91f042b0aee47171f2b7633cacbd"/></dir><dir name="etc"><file name="config.xml" hash="d6d8034342ea82557cc9c4a62acf7388"/></dir><dir name="sql"><dir name="dependency_setup"><file name="mysql4-install-1.0.0.php" hash="f1ce4898842296e719e5edb4dd81ce0e"/></dir></dir></dir></dir><dir name="Mage"><dir name="Core"><dir name="Model"><file name="Config.php" hash="d6c777bac108cf193b5896ad59862b52"/></dir></dir></dir><dir name="Varien"><dir name="Data"><dir name="Form"><dir name="Element"><file name="Abstract.php" hash="8d417720fb040f64e5d3ec3852a0df97"/></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="dependency.xml" hash="26b3aed75dbc791982a128fe7a3b43e9"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Customweb_Dependency.xml" hash="6cbf8016b0e3b1e8ae9895a702d0f8fc"/></dir></target><target name="mage"><dir name="js"><dir name="customweb"><file name="dependency.js" hash="37912efa07da4691e52ed1b75bba43a1"/></dir></dir></target><target name="mageskin"><dir name="adminhtml"><dir name="base"><dir name="default"><dir name="css"><file name="dependency.css" hash="d0b575ab0e3115a04872f1663e8e9a2e"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
