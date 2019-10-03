@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 The Extension allows you to synchronize and share content as well as settings among your different magento stores. 
